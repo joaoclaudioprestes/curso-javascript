@@ -8,7 +8,7 @@
     <title>Meu primeiro programa...</title>
     <style>
         body {
-            background-color: blanchedalmond;
+            background-color: blanchedalmond; /*esse é um comentário em CSS*/
             color: black;
             font: normal 17pt arial;
         }
@@ -16,13 +16,12 @@
 </head>
 
 <body>
-    <h1>Olá mundo!</h1>
+    <h1>Olá mundo!</h1> <!--Isso é um comentário em HTML-->
     <p>Já me livrei da maldição</p>
 
     <script>
-        window.alert('Minha primeira mensagem!') //criar alertas...
-        window.confirm('Está gostando de JS?') //criar um alerta de confirmação...
-        window.prompt('Qual é o seu nome?') //perguntar algo...
+       var nome = window.prompt('Qual é o seu nome?') // var nome = ... vai guardar o nome!
+       window.alert('É um grande prazer em te conhecer, '+ nome + '!')//concatenação!!
     </script>
 
 </body>
