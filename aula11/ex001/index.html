@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <h1>Qual é a sua nacionalidade?</h1>
+
+    <p>
+        O intuito deste site é te ajudar a descobrir sua nacionalidade!
+
+    </p>
+
+    <h2>Digite o seu pais de origem</h2>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Enviar" id="btenviar" onclick="enviar">
+
+    <script>
+        function enviar(){
+            var origem = document.querySelector('input#txtpais')
+            if(txtpais == Brasil){
+                origem.innerHTML += `<p>Você é <strong>Brasileiro</strong></p>`
+            }else{
+                origem.innerHTML += `<p>Você é estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+
+</html>
